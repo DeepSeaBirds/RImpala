@@ -43,7 +43,7 @@ Here are links to more information on Cloudera Impala:
 - [Impala-User Google Group](https://groups.google.com/a/cloudera.org/forum/?fromgroups#!forum/impala-user)
  
 ##Requirements
-- Java (>= 1.5)
+- Java (>= 1.7)
 - R (>= 2.7.0)
 - rJava (>= 0.5-0)
 - Impala [JDBC driver jars](impala-jdbc-cdh5.zip)

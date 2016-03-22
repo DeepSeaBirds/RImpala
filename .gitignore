@@ -6,3 +6,4 @@ target
 *.zip
 *.Rproj.user
 .Rhistory
+.Rproj.user

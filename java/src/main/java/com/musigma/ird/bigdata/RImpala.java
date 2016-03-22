@@ -14,19 +14,16 @@ public class RImpala {
 
 	private static String CONNECTION_URL;
 
-	private static final String JDBC_DRIVER_NAME = "org.apache.hive.jdbc.HiveDriver";
+	private static final String JDBC_DRIVER_NAME = "com.cloudera.impala.jdbc41.Driver";
+	private static final String JDBC_URL_PREFIX = "jdbc:impala://";
+
 
 	private static Connection con = null;
-
-	public static void main(String[] args) {
-
-
-	}
 
 
 	public static boolean connect(String IP, String port, String principal) {
 
-		CONNECTION_URL = "jdbc:hive2://" + IP + ':' + port + "/;" + principal;
+		CONNECTION_URL = JDBC_URL_PREFIX + IP + ':' + port + "/;" + principal;
 
 		try {
 			Class.forName(JDBC_DRIVER_NAME);
